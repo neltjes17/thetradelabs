@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>TradeLabs</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the html.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="trade.css" type="text/css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<!--
+  This html file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
+
+
+<!-- Navbar code START-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark nav-tabs">
+    <a class="navbar-brand" id="navTradeLabs" href="index.html"><i class="fas fa-flask mr-1"></i>TradeLabs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" id="navTrade" href="trade.html">Trade</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" id="navLearn" href="learn.html">Learn</a>
+            </li>
+        </ul>
+        <li id="comingSoon">
+            <h1>Coming Soon!</h1>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- Navbar code END-->
+
+<!-- TradingView Chart Widget BEGIN -->
+<div class="tradingview-widget-container" style="margin-left:0; float: left;">
+    <div id="tradingview_5a20c"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+            {
+                "width": 1490,
+                "height": 830,
+                "symbol": "NASDAQ:AAPL",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "details": true,
+                "studies": [
+                    "MASimple@tv-basicstudies"
+                ],
+                "container_id": "tradingview_5a20c"
+            }
+        );
+    </script>
+</div>
+<!-- TradingView Chart Widget END -->
+
+<div id="tradeSidebar" class="sidebar">
+
+    <div id="signUpBox">
+        <div id="signUpHeader">
+            <h2>Sign Up!</h2>
+            <p>Enter your name and email to create an account!</p>
+        </div>
+    </div>
+
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="watchlist">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Crypto</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+            {
+                "showChart": true,
+                "locale": "en",
+                "largeChartUrl": "",
+                "width": "400",
+                "height": "550",
+                "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
+                "plotLineColorFalling": "rgba(255, 74, 104, 1)",
+                "gridLineColor": "rgba(233, 233, 234, 1)",
+                "scaleFontColor": "rgba(214, 216, 224, 1)",
+                "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
+                "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
+                "symbolActiveColor": "rgba(242, 250, 254, 1)",
+                "tabs": [
+                {
+                    "title": "Crypto",
+                    "symbols": [
+                        {
+                            "s": "BITFINEX:BTCUSD",
+                            "d": "Bitcoin"
+                        },
+                        {
+                            "s": "KRAKEN:XRPUSD",
+                            "d": "Ripple"
+                        },
+                        {
+                            "s": "KRAKEN:BCHUSD",
+                            "d": "Bitcoin Cash"
+                        },
+                        {
+                            "s": "KRAKEN:ETHUSD",
+                            "d": "Ethereum"
+                        },
+                        {
+                            "s": "KRAKEN:LTCUSD",
+                            "d": "Litecoin"
+                        },
+                        {
+                            "s": "BITFINEX:TRXUSD",
+                            "d": "Tron"
+                        },
+                        {
+                            "s": "BITFINEX:XLMUSD",
+                            "d": "Stellar"
+                        },
+                        {
+                            "s": "KRAKEN:ETCUSD",
+                            "d": "Ethereum Classic"
+                        }
+                    ]
+                },
+                {
+                    "title": "Stocks",
+                    "symbols": [
+                        {
+                            "s": "NASDAQ:AMD",
+                            "d": "AMD"
+                        },
+                        {
+                            "s": "NASDAQ:AAPL",
+                            "d": "APPLE"
+                        },
+                        {
+                            "s": "NYSE:TWTR",
+                            "d": "TWITTER"
+                        },
+                        {
+                            "s": "NASDAQ:NVDA",
+                            "d": "NVIDIA"
+                        },
+                        {
+                            "s": "NASDAQ:GOOG",
+                            "d": "GOOGLE"
+                        },
+                        {
+                            "s": "NASDAQ:FB",
+                            "d": "FACEBOOK"
+                        }
+                    ],
+                    "originalTitle": "Stocks"
+                }
+            ]
+            }
+        </script>
+    </div>
+     <!-- TradingView Widget END -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 footer">
+    <div class="footerContainer">
+        <div id="social-platforms">
+            <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/TradeLabs-221215365429193" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+
+            <a class="btn btn-icon btn-twitter" href="https://www.twitter.com/thetradelabs" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+
+            <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/thetradelabs" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+        </div>
+    </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>
