@@ -1,60 +1,36 @@
-
-
-
-.headerTitle {
-    font-size: 175px;
-}
-
-.headerImg {
-    height: 70vh;
-    width: 100vw;
-}
-
-#flask {
-    color: dodgerblue;
-}
-
 body {
     margin: 0;
     padding: 0;
-    background-color: lightslategrey;
+    background-color: black;
 }
 
-.card-header {
-    font-size: 40px;
-    padding: 20px 20px;
+/* Header */
+#flask {
+    font-size: 25px;
 }
 
-
-#footerLinks {
-    float: left;
-    margin-top: 30px;
-    margin-left: -200px;
+/* Page Container */
+.page-content {
+    width: 100%;
+    margin: 30px 0 60px 0;
     padding: 0;
-    font-size: 40px;
+
 }
 
-a:link {
-    color: white;
-}
-
-a:hover {
-    color: dodgerblue;
-}
-
-
-
+/* Footer*/
 .footer {
     background-color: #212529;
-    height: 100px;
-    padding-top: 10px;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
-.column {
-    min-width: 300px;
-    height: 100%;
-    text-align: center;
-
+#social-platforms {
+    max-width: 100%;
+    display: inline-block;
 }
 
 #social-media {
@@ -62,9 +38,11 @@ a:hover {
     top: 25vh;
     font-size: 1rem;
     text-align: center;
-    height: 250px;
+    height: 20px;
     overflow: hidden;
 }
+
+
 
 .btn {
     clear: both;

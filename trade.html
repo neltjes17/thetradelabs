@@ -43,55 +43,52 @@
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
-<!--
-  This html file is a template.
-  If you open it directly in the browser, you will see an empty page.
-
-  You can add webfonts, meta tags, or analytics to this file.
-  The build step will place the bundled scripts into the <body> tag.
-
-  To begin the development, run `npm start` or `yarn start`.
-  To create a production bundle, use `npm run build` or `yarn build`.
--->
 
 
 <!-- Navbar code START-->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark nav-tabs">
-    <a class="navbar-brand" id="navTradeLabs" href="index.html"><i class="fas fa-flask mr-1"></i>TradeLabs</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" id="navTrade" href="trade.html">Trade</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" id="navLearn" href="learn.html">Learn</a>
-            </li>
-        </ul>
-        <li id="comingSoon">
-            <h1>Coming Soon!</h1>
-        </li>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i id="flask" class="fas fa-flask w3-margin-right w3-text-blue"></i>TradeLabs</a>
+        <a href="trade.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fas fa-chart-line w3-text-green"></i>Trade</a>
+        <a href="learn.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-book w3-text-red"></i>Learn</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                <a href="#" class="w3-bar-item w3-button">Sign Up for the Beta</a>
+                <a href="#" class="w3-bar-item w3-button">Invite your friends</a>
+                <a href="#" class="w3-bar-item w3-button">Follow us on Social Media!</a>
+            </div>
+        </div>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+            <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+        </a>
     </div>
-</nav>
+    <!-- END Navbar -->
+</div>
+
+    <!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
 <!-- Navbar code END-->
 
-<!-- TradingView Chart Widget BEGIN -->
-<div class="tradingview-widget-container" style="margin-left:0; float: left;">
+
+<!-- Page Container -->
+<div class="page-content">
+    <!-- TradingView Chart Widget BEGIN -->
+<div class="tradingview-widget-container chart">
     <div id="tradingview_5a20c"></div>
     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
             {
-                "width": 1490,
-                "height": 830,
+                "width": 1500,
+                "height": 850,
                 "symbol": "NASDAQ:AAPL",
                 "interval": "D",
                 "timezone": "Etc/UTC",
@@ -110,17 +107,36 @@
         );
     </script>
 </div>
-<!-- TradingView Chart Widget END -->
+    <!-- TradingView Chart END -->
 
+<!-- Sidebar Begin -->
 <div id="tradeSidebar" class="sidebar">
 
+    <!-- TradeSignUp Begin -->
     <div id="signUpBox">
         <div id="signUpHeader">
             <h2>Sign Up!</h2>
-            <p>Enter your name and email to create an account!</p>
+            <p>Enter your email to get access to our beta!</p>
         </div>
+        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('signUp').style.display='block'">
+            <i class="fas fa-sign-in-alt"></i> Join The Waitlist!
+        </button>
     </div>
 
+    <!-- Modal -->
+    <div id="download" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content" style="padding:32px">
+            <div class="w3-container w3-white">
+                <i onclick="document.getElementById('signUp').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
+                <h2 class="w3-wide">Sign Up!</h2>
+                <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
+                <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+                <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('signUp').style.display='none'">Submit!</button>
+            </div>
+        </div>
+    </div>
+    <!-- TradeSignUp End -->
 
     <!-- TradingView Widget BEGIN -->
     <div class="tradingview-widget-container" id="watchlist">
@@ -132,7 +148,7 @@
                 "locale": "en",
                 "largeChartUrl": "",
                 "width": "400",
-                "height": "550",
+                "height": "660",
                 "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
                 "plotLineColorFalling": "rgba(255, 74, 104, 1)",
                 "gridLineColor": "rgba(233, 233, 234, 1)",
@@ -212,8 +228,11 @@
             }
         </script>
     </div>
-     <!-- TradingView Widget END -->
+     <!-- Sidebar END -->
 </div>
+    <!-- End Page Container -->
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-container w3-theme-d3 footer">

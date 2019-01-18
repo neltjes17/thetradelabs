@@ -1,8 +1,24 @@
-
 body {
     margin: 0;
     padding: 0;
     background-color: lightslategrey;
+}
+/* Header */
+#flask {
+    font-size: 25px;
+}
+
+/* Page Container */
+.page-content {
+    width: 100%;
+    margin: 50px 0 60px 0;
+    padding: 0;
+
+}
+
+.chart {
+    margin-left:0;
+    float: left
 }
 
 
