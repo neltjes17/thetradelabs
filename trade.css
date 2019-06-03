@@ -4,28 +4,22 @@ body {
     background-color: lightslategrey;
 }
 /* Header */
-#flask {
-    font-size: 25px;
+.navIcon {
+    font-size: 20px;
 }
-
-/* Page Container */
-.page-content {
-    width: 100%;
-    margin: 50px 0 60px 0;
-    padding: 0;
-
-}
-
-.chart {
-    margin-left:0;
-    float: left
+#headerButton {
+    font-size: 1.5em;
 }
 
 
+.emailInvite {
+    margin-top: 10px;
+}
 /* SideBar */
 #tradeSidebar {
     float: right;
     max-width: 400px;
+    display: inline-block;
 }
 
 #signUpBox {
@@ -216,4 +210,14 @@ body {
 
 .btn-instagram > span {
     background: #517fa4;
+}
+
+/*LinkedIn*/
+.btn-linkedin:hover > i,
+.btn-linkedin:focus > i {
+    color:#007bb6
+}
+
+.btn-linkedin > span {
+    background:#007bb6
 }

@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138875925-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-138875925-1');
+    </script>
+
+
+    <meta charset="UTF-8">
     <title>TradeLabs</title>
 
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the html.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -41,205 +40,178 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    s
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
 
-    <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i id="flask" class="fas fa-flask w3-margin-right w3-text-blue"></i>TradeLabs</a>
-        <a href="trade.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fas fa-chart-line w3-text-green"></i>Trade</a>
-        <a href="learn.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-book w3-text-red"></i>Learn</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-theme-d4"><i class="fas fa-flask w3-text-blue navIcon"></i>TradeLabs</a>
+        <a href="trade.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-green navIcon"></i>Trade</a>
+        <a href="learn.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fa fa-book w3-text-red navIcon"></i>Learn</a>
         <div class="w3-dropdown-hover w3-hide-small">
-          <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
-          <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-            <a href="#" class="w3-bar-item w3-button">Sign Up for the Beta</a>
-            <a href="#" class="w3-bar-item w3-button">Invite your friends</a>
-            <a href="#" class="w3-bar-item w3-button">Follow us on Social Media!</a>
-          </div>
-        </div>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-          <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-        </a>
-      </div>
-      <!-- END Navbar -->
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-    </div>
-
-    <!-- Page Container -->
-    <div class="page-content">
-      <!-- The App Section -->
-      <div class="w3-padding-64 w3-white">
-        <div class="w3-row-padding">
-          <div class="w3-col l8 m6">
-            <h1 class="w3-jumbo"><b>TradeLabs</b></h1>
-            <h1 class="w3-xxxlarge w3-text-green"><b>Stock & Cryptocurrency Trading Platform</b></h1>
-            <p><span class="w3-xlarge">Trade stocks like a pro.</span> You should trade with us because lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="document.getElementById('signUp').style.display='block'">
-              <i class="fa fa-download"></i> Sign Up!
-            </button>
-            <p>Available for <i class="fa fa-android w3-xlarge w3-text-green"></i> <i class="fa fa-apple w3-xlarge"></i> <i class="fa fa-windows w3-xlarge w3-text-blue"></i></p>
-          </div>
-          <div class="w3-col l4 m6">
-            <img src="/w3images/img_app.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
-            <div class="w3-center w3-hide-large w3-hide-medium">
-              <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('signUp').style.display='block'">
-                <i class="fa fa-download"></i> Download Application
-              </button>
-              <img src="/w3images/img_app.jpg" class="w3-image w3-margin-top" width="335" height="471">
+            <button class="w3-button w3-padding-medium" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                <a href="https://discord.gg/krXySTH" class="w3-bar-item w3-button notifications">Join our group!</a>
+                <a href="" class="w3-bar-item w3-button notifications">Invite your friends</a>
+                <a href="https://www.twitter.com/thetradelabs" class="w3-bar-item w3-button notifications">Follow us on Social Media!</a>
             </div>
-          </div>
         </div>
-      </div>
-
-      <!-- Modal -->
-      <div id="signUp" class="w3-modal w3-animate-opacity">
-        <div class="w3-modal-content" style="padding:32px">
-          <div class="w3-container w3-white">
-            <i onclick="document.getElementById('signUp').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-            <h2 class="w3-wide">Sign Up!</h2>
-            <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-            <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
-            <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-            <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('signUp').style.display='none'">Submit!</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Clarity Section -->
-      <div class="w3-padding-64 w3-light-grey">
-        <div class="w3-row-padding">
-          <div class="w3-col l4 m6">
-            <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="/w3images/app5.jpg" alt="App" width="335" height="471">
-          </div>
-          <div class="w3-col l8 m6">
-            <h1 class="w3-jumbo"><b>For Schools</b></h1>
-            <h1 class="w3-xxxlarge w3-text-red"><b>Pixels, who?</b></h1>
-            <p><span class="w3-xlarge">A revolution in resolution.</span> Sharp and clear photos with the world's best photo engine, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Cards Section -->
-      <div class="w3-padding-64 w3-light-grey">
-        <div class="w3-row-padding">
-          <div class="container my-5">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header">Learn</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Are you new to all of this?</h5>
-                    <p class="card-text">Are you asking yourself what's a stock?
-                      What's a cryptocurrency? If you have wondered these same things, wonder no longer, we have the answers...</p>
-                    <a href="learn.html" class="btn btn-outline-success btn-sm">Learn More!</a>
-                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header">Trade</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Stocks & Cryptocurrencies</h5>
-                    <p class="card-text">Our team of traders have discovered the secret to trading in the modern world. Collaboration with other traders...</p>
-                    <a href="trade.html" class="btn btn-outline-success btn-sm">Sign Up!</a>
-                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-                  <div class="card-header">Win!</div>
-                  <div class="card-body">
-                    <h5 class="card-title">Compete in Competitions</h5>
-                    <p class="card-text">Our virtual stock & cryptocurrency trading platform allows you to trade with your friends and compete
-                      in competitions to win money!</p>
-                    <a href="trade.html" class="btn btn-outline-success btn-sm">Join The Beta!</a>
-                    <a href="#" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Pricing Section -->
-      <div class="w3-padding-64 w3-center w3-white">
-        <h1 class="w3-jumbo"><b>Pricing</b></h1>
-        <p class="w3-large">Choose a pricing plan that fits your needs.</p>
-        <div class="w3-row-padding" style="margin-top:64px">
-          <div class="w3-half w3-section">
-            <ul class="w3-ul w3-card w3-hover-shadow">
-              <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-              <li class="w3-padding-16"><b>250</b> Photos</li>
-              <li class="w3-padding-16"><b>10</b> Features</li>
-              <li class="w3-padding-16"><b>No</b> Ads</li>
-              <li class="w3-padding-16"><b>Office hours</b> Support</li>
-              <li class="w3-padding-16">
-                <h2 class="w3-opacity">$ 25</h2>
-              </li>
-              <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"><i class="fa fa-download"></i> Download</button>
-              </li>
-            </ul>
-          </div>
-          <div class="w3-half w3-section">
-            <ul class="w3-ul w3-card w3-hover-shadow">
-              <li class="w3-red w3-xlarge w3-padding-32">Premium</li>
-              <li class="w3-padding-16"><b>1000</b> Photos</li>
-              <li class="w3-padding-16"><b>50</b> Features</li>
-              <li class="w3-padding-16"><b>No</b> Ads</li>
-              <li class="w3-padding-16"><b>Endless</b> Support</li>
-              <li class="w3-padding-16">
-                <h2 class="w3-opacity">$ 99</h2>
-              </li>
-              <li class="w3-light-grey w3-padding-24">
-                <button class="w3-button w3-black w3-padding-large" onclick="document.getElementById('download').style.display='block'"> <i class="fa fa-download"></i> Download</button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <br>
-      </div>
-      <!-- End Page Container -->
+        <a href="https://discord.gg/krXySTH"><button type="button" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-medium w3-hover-white" title="Sign Up"><i class="fas fa-user-tie"></i>Sign Up</button></a>
     </div>
+    <!-- END Navbar -->
+</div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-theme-d3 footer">
-      <div class="footerContainer">
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+    <div class="mySlides w3-animate-opacity">
+        <img class="w3-image" src="header1.jpg" alt="Image 1" style="min-width:500px">
+        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                <h1 class="w3-xlarge">TradeLabs Stock Trading Group</h1>
+                <hr class="w3-opacity">
+                <p>Join our daily discussion about the stock market and potential trades</p>
+                <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-green w3-round">Sign Up for Free!</button></p></a>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides w3-animate-opacity">
+        <img class="w3-image" src="bigchart.jpg" alt="Image 2" style="min-width:500px">
+        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                <h1 class="w3-xlarge w3-text-red">Simple, free charts</h1>
+                <hr class="w3-opacity">
+                <p>TradeLabs provides free access to the best charts for watching your stocks!</p>
+                <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-red w3-round">Take me there!</button></p></a>
+            </div>
+        </div>
+    </div>
+    <div class="mySlides w3-animate-opacity">
+        <img class="w3-image" src="phonechart.jpg" alt="Image 3" style="min-width:500px">
+        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                <h1 class="w3-xlarge">Trading Journal</h1>
+                <hr class="w3-opacity">
+                <p>Copy this free Google Spreadsheet template to track your trades</p>
+                <a href="https://docs.google.com/spreadsheets/d/1Wg4Y_GfuXzhEKFAk_qh6tU3zyiCS-tjvbiUHN1mLLmg/edit?usp=sharing" target="_blank"><p><button class="w3-button w3-block w3-indigo w3-round">Download</button></p>
+            </div>
+        </div>
+    </div>
+    <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+    <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+</header>
+
+<!-- Premium Payment -->
+<div class="w3-padding-64 w3-black">
+    <div class="w3-row-padding fontCenter">
+        <div class="w3-col l6 m6 fontCenter">
+            <h1 class="w3-xlarge w3-text-white fontCenter "><b>Join TradeLabs for Free!</b></h1>
+            <iframe src="https://discordapp.com/widget?id=560975307281268736&theme=dark" width="350" height="450" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+        <div class="w3-col l6 m6">
+            <h1 class="w3-xxlarge w3-text-blue fontCenter"><b>TradeLabs Premium</b></h1>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="payment">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="ZPVFXBPFKGBXS">
+                <table>
+                    <tr><td><input type="hidden" name="on0" value="Enter Discord Name" >Enter Discord Name:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                </table>
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+            <br>
+            <h1 class="w3-xlarge w3-text-blue fontCenter "><b>Subscribe for access to:</b></h1>
+            <p>LIVE Trade Setups</p>
+            <p>LIVE Options Callouts</p>
+            <p>Exclusive Chat for Premium Traders</p>
+            <p>In-depth Trade Analysis</p>
+            <p>Q&A Sessions with our Admins</p>
+        </div>
+    </div>
+</div>
+
+<!-- The App Section -->
+<div class="w3-padding-64 w3-dark-grey">
+    <div class="w3-row-padding fontCenter">
+        <div class="w3-col l6 m6">
+            <h1 class="w3-xxlarge w3-text-blue fontCenter"><b>Free Trading Journal</b></h1>
+            <img src="SpreadsheetTemplate.PNG" class="colImgL">
+            <p class="colText"><span class="w3-xlarge w3-text-green">Trading Journal Template</span> - We have created a Google Spreadsheet template that provides new traders with the tools to track their trades and perfect their trading strategies.</p>
+        </div>
+        <div class="w3-col l6 m6 fontCenter">
+
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container" style="display: inline-block;">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Quotes</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                    {
+                        "symbol": "NASDAQ:AAPL",
+                        "width": "450",
+                        "height": "300",
+                        "locale": "en",
+                        "dateRange": "12m",
+                        "colorTheme": "dark",
+                        "trendLineColor": "rgba(55, 166, 239, 0.77)",
+                        "underLineColor": "rgba(0, 0, 255, 0.15)",
+                        "isTransparent": false,
+                        "autosize": true,
+                        "largeChartUrl": ""
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+
+            <p class="colText"><span class="w3-xlarge w3-text-green">TradeLabs Annual Collegiate Trading Competition</span> - Compete against other college traders to show off your investment knowledge and skills for a chance to win
+                prize money for your trading portfolio and your investment club!</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 footer">
+    <div class="footerContainer">
         <div id="social-platforms">
-          <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/TradeLabs-221215365429193" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+            <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/TradeLabs-221215365429193" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
 
-          <a class="btn btn-icon btn-twitter" href="https://www.twitter.com/thetradelabs" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+            <a class="btn btn-icon btn-twitter" href="https://www.twitter.com/thetradelabs" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 
-          <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/thetradelabs" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+            <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/thetradelabs" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+
+            <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/company/thetradelabs" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
         </div>
-      </div>
-    </footer>
+    </div>
+</footer>
 
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
+<script>
+    // Slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
 
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+</script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-  </body>
+</body>
 </html>

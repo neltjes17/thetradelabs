@@ -45,50 +45,35 @@
 <div id="root"></div>
 
 
-<!-- Navbar code START-->
+<!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i id="flask" class="fas fa-flask w3-margin-right w3-text-blue"></i>TradeLabs</a>
-        <a href="trade.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fas fa-chart-line w3-text-green"></i>Trade</a>
-        <a href="learn.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-book w3-text-red"></i>Learn</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-theme-d4"><i class="fas fa-flask w3-text-blue navIcon"></i>TradeLabs</a>
+        <a href="trade.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-green navIcon"></i>Trade</a>
+        <a href="learn.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fa fa-book w3-text-red navIcon"></i>Learn</a>
         <div class="w3-dropdown-hover w3-hide-small">
-            <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+            <button class="w3-button w3-padding-medium" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
             <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-                <a href="#" class="w3-bar-item w3-button">Sign Up for the Beta</a>
-                <a href="#" class="w3-bar-item w3-button">Invite your friends</a>
-                <a href="#" class="w3-bar-item w3-button">Follow us on Social Media!</a>
+                <a href="https://discord.gg/krXySTH" class="w3-bar-item w3-button notifications">Join our group!</a>
+                <a href="" class="w3-bar-item w3-button notifications">Invite your friends</a>
+                <a href="https://www.twitter.com/thetradelabs" class="w3-bar-item w3-button notifications">Follow us on Social Media!</a>
             </div>
         </div>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-            <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
-        </a>
+        <a href="https://discord.gg/krXySTH"><button type="button" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-medium w3-hover-white" title="Sign Up"><i class="fas fa-user-tie"></i>Sign Up</button></a>
     </div>
     <!-- END Navbar -->
 </div>
 
-    <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
-</div>
-<!-- Navbar code END-->
 
-
-<!-- Page Container -->
-<div class="page-content">
     <!-- TradingView Chart Widget BEGIN -->
-<div class="tradingview-widget-container chart">
-    <div id="tradingview_5a20c"></div>
+
+<div class="w3-hide-small" style="height: 690px; padding-top: 20px;">
     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
     <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
     <script type="text/javascript">
         new TradingView.widget(
             {
-                "width": 1500,
-                "height": 850,
+                "autosize":true,
                 "symbol": "NASDAQ:AAPL",
                 "interval": "D",
                 "timezone": "Etc/UTC",
@@ -98,140 +83,16 @@
                 "toolbar_bg": "#f1f3f6",
                 "enable_publishing": false,
                 "allow_symbol_change": true,
+                "calendar": true,
                 "details": true,
                 "studies": [
                     "MASimple@tv-basicstudies"
                 ],
-                "container_id": "tradingview_5a20c"
             }
         );
     </script>
 </div>
     <!-- TradingView Chart END -->
-
-<!-- Sidebar Begin -->
-<div id="tradeSidebar" class="sidebar">
-
-    <!-- TradeSignUp Begin -->
-    <div id="signUpBox">
-        <div id="signUpHeader">
-            <h2>Sign Up!</h2>
-            <p>Enter your email to get access to our beta!</p>
-        </div>
-        <button class="w3-button w3-block w3-padding-large" onclick="document.getElementById('signUp').style.display='block'">
-            <i class="fas fa-sign-in-alt"></i> Join The Waitlist!
-        </button>
-    </div>
-
-    <!-- Modal -->
-    <div id="download" class="w3-modal w3-animate-opacity">
-        <div class="w3-modal-content" style="padding:32px">
-            <div class="w3-container w3-white">
-                <i onclick="document.getElementById('signUp').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-                <h2 class="w3-wide">Sign Up!</h2>
-                <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-                <i class="fa fa-android w3-large"></i> <i class="fa fa-apple w3-large"></i> <i class="fa fa-windows w3-large"></i>
-                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
-                <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('signUp').style.display='none'">Submit!</button>
-            </div>
-        </div>
-    </div>
-    <!-- TradeSignUp End -->
-
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container" id="watchlist">
-        <div class="tradingview-widget-container__widget"></div>
-        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Crypto</span></a> by TradingView</div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-            {
-                "showChart": true,
-                "locale": "en",
-                "largeChartUrl": "",
-                "width": "400",
-                "height": "660",
-                "plotLineColorGrowing": "rgba(60, 188, 152, 1)",
-                "plotLineColorFalling": "rgba(255, 74, 104, 1)",
-                "gridLineColor": "rgba(233, 233, 234, 1)",
-                "scaleFontColor": "rgba(214, 216, 224, 1)",
-                "belowLineFillColorGrowing": "rgba(60, 188, 152, 0.05)",
-                "belowLineFillColorFalling": "rgba(255, 74, 104, 0.05)",
-                "symbolActiveColor": "rgba(242, 250, 254, 1)",
-                "tabs": [
-                {
-                    "title": "Crypto",
-                    "symbols": [
-                        {
-                            "s": "BITFINEX:BTCUSD",
-                            "d": "Bitcoin"
-                        },
-                        {
-                            "s": "KRAKEN:XRPUSD",
-                            "d": "Ripple"
-                        },
-                        {
-                            "s": "KRAKEN:BCHUSD",
-                            "d": "Bitcoin Cash"
-                        },
-                        {
-                            "s": "KRAKEN:ETHUSD",
-                            "d": "Ethereum"
-                        },
-                        {
-                            "s": "KRAKEN:LTCUSD",
-                            "d": "Litecoin"
-                        },
-                        {
-                            "s": "BITFINEX:TRXUSD",
-                            "d": "Tron"
-                        },
-                        {
-                            "s": "BITFINEX:XLMUSD",
-                            "d": "Stellar"
-                        },
-                        {
-                            "s": "KRAKEN:ETCUSD",
-                            "d": "Ethereum Classic"
-                        }
-                    ]
-                },
-                {
-                    "title": "Stocks",
-                    "symbols": [
-                        {
-                            "s": "NASDAQ:AMD",
-                            "d": "AMD"
-                        },
-                        {
-                            "s": "NASDAQ:AAPL",
-                            "d": "APPLE"
-                        },
-                        {
-                            "s": "NYSE:TWTR",
-                            "d": "TWITTER"
-                        },
-                        {
-                            "s": "NASDAQ:NVDA",
-                            "d": "NVIDIA"
-                        },
-                        {
-                            "s": "NASDAQ:GOOG",
-                            "d": "GOOGLE"
-                        },
-                        {
-                            "s": "NASDAQ:FB",
-                            "d": "FACEBOOK"
-                        }
-                    ],
-                    "originalTitle": "Stocks"
-                }
-            ]
-            }
-        </script>
-    </div>
-     <!-- Sidebar END -->
-</div>
-    <!-- End Page Container -->
-</div>
 
 
 <!-- Footer -->
@@ -243,6 +104,8 @@
             <a class="btn btn-icon btn-twitter" href="https://www.twitter.com/thetradelabs" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
 
             <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/thetradelabs" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+
+            <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/company/thetradelabs" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
         </div>
     </div>
 </footer>

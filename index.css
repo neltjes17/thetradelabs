@@ -5,17 +5,68 @@ body {
 }
 
 /* Header */
-#flask {
-    font-size: 25px;
+.navIcon {
+    font-size: 20px;
 }
+#headerButton {
+    font-size: 1.5em;
+}
+
 
 /* Page Container */
 .page-content {
     width: 100%;
     margin: 30px 0 60px 0;
     padding: 0;
+}
+
+
+ /* Sections */
+.fontCenter {
+    text-align: center;
+}
+
+.hoverDance {
+    transition: all .2s ease-in-out;
+}
+
+.hoverDance:hover {
+    transform: scale(1.15);
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.featureFont {
+    font-size: 3em;
+}
+
+.colImgL {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
 
 }
+
+.colImgR {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.colText {
+    padding: 0 40px;
+    padding-top: 20px;
+}
+
+.payment {
+    display: inline-block;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
 
 /* Footer*/
 .footer {
@@ -148,4 +199,14 @@ body {
 
 .btn-instagram > span {
     background: #517fa4;
+}
+
+/*LinkedIn*/
+.btn-linkedin:hover > i,
+.btn-linkedin:focus > i {
+    color:#007bb6
+}
+
+.btn-linkedin > span {
+    background:#007bb6
 }
