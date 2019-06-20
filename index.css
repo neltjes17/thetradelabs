@@ -85,30 +85,6 @@ body {
 }
 
 /* start da css for da buttons */
-.btn {
-    border-radius: 5px;
-    padding: 15px 25px;
-    font-size: 22px;
-    text-decoration: none;
-    margin: 20px;
-    color: #fff;
-    position: relative;
-    display: inline-block;
-}
-
-.btn:active {
-    transform: translate(0px, 5px);
-    -webkit-transform: translate(0px, 5px);
-    box-shadow: 0px 1px 0px 0px;
-}
-.black {
-    background-color: black;
-    box-shadow: 0px 5px 0px 0px #3C93D5;
-}
-.black:hover {
-    background-color: #333030;
-}
-
 .blue {
     background-color: #55acee;
     box-shadow: 0px 5px 0px 0px #3C93D5;
