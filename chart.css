@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+/* Header */
+.navIcon {
+    font-size: 20px;
+}
+
+/* Footer*/
+.footer {
+    background-color: #212529;
+    height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#social-platforms {
+    max-width: 100%;
+    display: inline-block;
+}
+
+#social-media {
+    position: relative;
+    top: 25vh;
+    font-size: 1rem;
+    text-align: center;
+    height: 20px;
+    overflow: hidden;
+}
+
+.btn {
+    clear: both;
+    white-space: nowrap;
+    font-size: 0.8em;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+    margin: 2px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.btn:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.45);
+}
+
+.btn:focus {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.btn > span,
+.btn-icon > i {
+    float: left;
+    padding: 13px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+    line-height: 1em;
+}
+
+.btn > span {
+    padding: 14px 18px 16px;
+    white-space: nowrap;
+    color: #fff;
+    background: #b8b8b8;
+}
+
+.btn:hover > span {
+    color: #212121;
+    font-weight: 900;
+}
+
+.btn:focus > span {
+    background: #9a9a9a;
+}
+
+.btn-icon > i {
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    width: 40px;
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+    background: #212121;
+}
+
+.btn-icon > i:after {
+    content: "";
+    border: 8px solid;
+    border-color: transparent transparent transparent #222;
+    position: absolute;
+    top: 13px;
+    right: -15px;
+}
+
+.btn-icon:hover > i,
+.btn-icon:focus > i {
+    color: #fff;
+}
+
+.btn-icon > span {
+    border-radius: 0 5px 5px 0;
+}
+
+/*Facebook*/
+.btn-facebook:hover > i,
+.btn-facebook:focus > i {
+    color: #3b5998;
+}
+
+.btn-facebook > span {
+    background: #3b5998;
+}
+
+/*Twitter*/
+.btn-twitter:hover > i,
+.btn-twitter:focus > i {
+    color: #00aced;
+}
+
+.btn-twitter > span {
+    background: #00aced;
+}
+
+/*Instagram*/
+.btn-instagram:hover > i,
+.btn-instagram:focus > i {
+    color: #517fa4;
+}
+
+.btn-instagram > span {
+    background: #517fa4;
+}
+
+/*LinkedIn*/
+.btn-linkedin:hover > i,
+.btn-linkedin:focus > i {
+    color:#007bb6
+}
+
+.btn-linkedin > span {
+    background:#007bb6
+}

@@ -12,6 +12,9 @@ body {
     font-size: 1.5em;
 }
 
+.w3-bar {
+    background-color: #333030;
+}
 
 /* Page Container */
 .page-content {
@@ -22,43 +25,12 @@ body {
 
 
  /* Sections */
+/*Payments */
 .fontCenter {
     text-align: center;
 }
-
-.hoverDance {
-    transition: all .2s ease-in-out;
-}
-
-.hoverDance:hover {
-    transform: scale(1.15);
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: 500;
-}
-
 .featureFont {
     font-size: 3em;
-}
-
-.colImgL {
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-
-}
-
-.colImgR {
-    max-width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.colText {
-    padding: 0 40px;
-    padding-top: 20px;
 }
 
 .payment {
@@ -67,8 +39,92 @@ body {
     padding-top: 40px;
 }
 
+.boxed {
+    background-color: #131722;
+    border-radius: 7px;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 3%;
+}
+
+
+
+/* Biz Buzz */
+.BizBuzz {
+    padding: 20px 20px 50px 20px;
+}
+
+.BizBuzztext {
+    background-color: #0F0F0F;
+    border-radius: 3px;
+    padding: 10px 40px 20px 40px;
+    text-align: center;
+}
+.BizBuzztext h3 {
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+.BizBuzztext h4 {
+    font-size: 1.1rem;
+
+}
+
+/* Chart/Video..*/
+.chartTxt {
+    background-color: #222222;
+    text-align: center;
+    padding: 20px;
+    margin: 0 25%;
+}
+
+.videoTxt {
+    background-color: #222222;
+    text-align: center;
+    padding: 20px;
+    margin: 0 15%;
+}
+
+/* start da css for da buttons */
+.btn {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+.black {
+    background-color: black;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+.black:hover {
+    background-color: #333030;
+}
+
+.blue {
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+    background-color: #6FC6FF;
+}
 
 /* Footer*/
+.navLink {
+    font-size: 1.7rem;
+    display: inline-block;
+    padding: 1.2rem 2rem;
+}
+
 .footer {
     background-color: #212529;
     height: 60px;
@@ -92,8 +148,6 @@ body {
     height: 20px;
     overflow: hidden;
 }
-
-
 
 .btn {
     clear: both;
@@ -150,7 +204,7 @@ body {
     text-align: center;
     font-size: 1.25em;
     color: #fff;
-    background: #212121;
+    background: #333030;
 }
 
 .btn-icon > i:after {

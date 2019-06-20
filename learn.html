@@ -60,8 +60,10 @@
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
 
         <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-theme-d4"><i class="fas fa-flask w3-text-blue navIcon"></i>TradeLabs</a>
-        <a href="trade.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-green navIcon"></i>Trade</a>
+        <a href="chart.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-light-blue navIcon"></i>Chart</a>
         <a href="learn.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fa fa-book w3-text-red navIcon"></i>Learn</a>
+        <a href="tradelink.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-comments-dollar w3-text-green navIcon"></i>TradeLink</a>
+
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-button w3-padding-medium" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
             <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
@@ -79,42 +81,37 @@
 
 <!-- Page Container -->
 <div class="page-content">
-
-    <div class="container">
-        <h3>COMING SOON</h3>
-        <div class="bar">
-            <div class="progress"></div>
-        </div>
+    <!-- Biz Buzz -->
+    <div class="BizBuzz">
+        <iframe class="podcast" height="200px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/e560b5d2-7798-47cf-ade8-f171f8d7fb64?dark=true"></iframe>
     </div>
 
+    <!-- Blog -->
+    <div class="blog w3-container w3-padding-32">
 
-    <!-- SIGN UP Modal -->
-    <div id="signUp" class="w3-modal w3-animate-opacity">
-        <div class="w3-modal-content" style="padding:32px">
-            <form class="w3-container w3-white" action="https://submit-form.com/S0BfBRx_xDp5sP4sxvVYt" target="_self">
-                <i onclick="document.getElementById('signUp').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-                <h2 class="w3-wide">Sign Up!</h2>
-                <p>Download the app in AppStore, Google Play or Microsoft Store.</p>
-                <p><input class="w3-input w3-border" type="text" name="email" placeholder="Enter e-mail"></p>
-                <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('signUp').style.display='none'">Submit!</button>
-            </form>
-        </div>
-    </div>
+        <div class="post w3-container w3-text-white">
+            <div class="w3-col l8 m6 s12">
+                <h1 class="title">Learning to Trade Stocks with a Trading Group</h1>
+                <hr class="titlehr">
+                <p>From: <a class="titleLink" href="https://ragingbull.com">RagingBull.com</a></p>
+                <p class="content w3-container">
 
-    <!-- INVITE FRIENDS Modal -->
-    <div id="invite" class="w3-modal w3-animate-opacity">
-        <div class="w3-modal-content" style="padding:32px">
-            <form class="w3-container w3-white" action="https://submit-form.com/H2mt6sHPMuVEldxbwFNSD" target="_self">
-                <i onclick="document.getElementById('invite').style.display='none'" class="fa fa-remove w3-xlarge w3-button w3-transparent w3-right w3-xlarge"></i>
-                <h2 class="w3-wide">Invite Your Friends!</h2>
-                <p>Enter your friends' emails to send them a link to sign up!</p>
-                <p><input class="w3-input w3-border emailInvite" type="email" name="email" placeholder="Enter e-mail">
-                    <input class="w3-input w3-border emailInvite" type="email" name="email2" placeholder="Enter e-mail">
-                    <input class="w3-input w3-border emailInvite" type="email" name="email3" placeholder="Enter e-mail">
+                    "Most beginner traders try to go at it alone, some become successful, but many lose focus and grit and quit the game.
+                    This happens due to the steep learning curve, causing those who want to be self-sufficient to fail because there are mistakes that could be avoided.
+                    That said, it’s always better to trade stocks with an experienced community, and you shouldn’t trade the markets alone, especially if you’re a beginner.
+                    When you watch an experienced trader trade live, you’re able to learn how to think like a trader and trade stocks.
+                    In general, beginners who have a mentor tend to make less mistakes because they have someone to help them fix those mistakes quickly or prevent them.
+                    Moreover, you’re able to learn how to trade stocks using a market-tested strategy."
+                             - Jeff Williams
                 </p>
-                <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('invite').style.display='none'">Submit!</button>
-            </form>
+                <a id="readMoreHere" class="w3-text-black" href="https://ragingbull.com/2018/07/13/trade-stocks-with-an-experienced-community/"><p>Read More -></p></a>
+            </div>
+            <div class="w3-col l4 m6 s12 imgCol">
+                <a href="https://ragingbull.com/2018/07/13/trade-stocks-with-an-experienced-community/"><img class="blogImg" src="61262.jpg" alt="Why You Need to Trade Stocks with an Experienced Community"></a>
+            </div>
+            <hr class="posthr">
         </div>
+
     </div>
     <!-- End Page Container -->
 </div>
@@ -136,10 +133,7 @@
 </footer>
 
 
-
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </body>

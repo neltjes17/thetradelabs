@@ -11,8 +11,7 @@
 
         gtag('config', 'UA-138875925-1');
     </script>
-
-
+    
     <meta charset="UTF-8">
     <title>TradeLabs</title>
 
@@ -26,29 +25,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
     <!-- Index.css -->
     <link rel="stylesheet" href="index.css" type="text/css">
-
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
 </head>
 <body>
 <!-- Navbar -->
 <div class="w3-top">
     <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
-
         <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-theme-d4"><i class="fas fa-flask w3-text-blue navIcon"></i>TradeLabs</a>
-        <a href="trade.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-green navIcon"></i>Trade</a>
+        <a href="chart.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-light-blue navIcon"></i>Chart</a>
         <a href="learn.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fa fa-book w3-text-red navIcon"></i>Learn</a>
+        <a href="tradelink.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-comments-dollar w3-text-green navIcon"></i>TradeLink</a>
+
         <div class="w3-dropdown-hover w3-hide-small">
             <button class="w3-button w3-padding-medium" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
             <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
@@ -62,117 +57,149 @@
     <!-- END Navbar -->
 </div>
 
-<!-- Header with Slideshow -->
-<header class="w3-display-container w3-center">
-    <div class="mySlides w3-animate-opacity">
-        <img class="w3-image" src="header1.jpg" alt="Image 1" style="min-width:500px">
-        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-                <h1 class="w3-xlarge">TradeLabs Stock Trading Group</h1>
-                <hr class="w3-opacity">
-                <p>Join our daily discussion about the stock market and potential trades</p>
-                <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-green w3-round">Sign Up for Free!</button></p></a>
+<div class="page-content">
+    <!-- Header with Slideshow -->
+    <header class="w3-display-container w3-center">
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="header1.jpg" alt="Image 1" style="min-width: 500px;">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge">TradeLabs Stock Trading Group</h1>
+                    <hr class="w3-opacity">
+                    <p>Join our daily discussion about the stock market and potential trades</p>
+                    <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-green w3-round">Sign Up for Free!</button></p></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="mySlides w3-animate-opacity">
-        <img class="w3-image" src="bigchart.jpg" alt="Image 2" style="min-width:500px">
-        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-                <h1 class="w3-xlarge w3-text-red">Simple, free charts</h1>
-                <hr class="w3-opacity">
-                <p>TradeLabs provides free access to the best charts for watching your stocks!</p>
-                <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-red w3-round">Take me there!</button></p></a>
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="bigchart.jpg" alt="Image 2" style="min-width:500px">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge w3-text-red">Simple, free charts</h1>
+                    <hr class="w3-opacity">
+                    <p>TradeLabs provides free access to the best charts for watching your stocks!</p>
+                    <a href="https://discord.gg/krXySTH" target="_blank"><p><button class="w3-button w3-block w3-red w3-round">Take me there!</button></p></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="mySlides w3-animate-opacity">
-        <img class="w3-image" src="phonechart.jpg" alt="Image 3" style="min-width:500px">
-        <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
-            <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
-                <h1 class="w3-xlarge">Trading Journal</h1>
-                <hr class="w3-opacity">
-                <p>Copy this free Google Spreadsheet template to track your trades</p>
-                <a href="https://docs.google.com/spreadsheets/d/1Wg4Y_GfuXzhEKFAk_qh6tU3zyiCS-tjvbiUHN1mLLmg/edit?usp=sharing" target="_blank"><p><button class="w3-button w3-block w3-indigo w3-round">Download</button></p>
+        <div class="mySlides w3-animate-opacity">
+            <img class="w3-image" src="phonechart.jpg" alt="Image 3" style="min-width:500px">
+            <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                    <h1 class="w3-xlarge">Trading Journal</h1>
+                    <hr class="w3-opacity">
+                    <p>Copy this free Google Spreadsheet template to track your trades</p>
+                    <a href="https://docs.google.com/spreadsheets/d/1Wg4Y_GfuXzhEKFAk_qh6tU3zyiCS-tjvbiUHN1mLLmg/edit?usp=sharing" target="_blank"><p><button class="w3-button w3-block w3-indigo w3-round">Download</button></p>
+                </div>
             </div>
         </div>
-    </div>
-    <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-    <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
-</header>
+        <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+        <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)">Take Tour <i class="fa fa-angle-right"></i></a>
+    </header>
 
-<!-- Premium Payment -->
-<div class="w3-padding-64 w3-black">
-    <div class="w3-row-padding fontCenter">
-        <div class="w3-col l6 m6 fontCenter">
-            <h1 class="w3-xlarge w3-text-white fontCenter "><b>Join TradeLabs for Free!</b></h1>
-            <iframe src="https://discordapp.com/widget?id=560975307281268736&theme=dark" width="350" height="450" allowtransparency="true" frameborder="0"></iframe>
+    <!-- Premium Payment -->
+    <div class="w3-padding-64 w3-black">
+        <div class="w3-row-padding fontCenter">
+            <div class="w3-col l6 m6 fontCenter">
+                <h1 class="w3-xxlarge w3-text-white w3-padding-32 fontCenter"><b>Join TradeLabs for Free!</b></h1>
+                <iframe src="https://discordapp.com/widget?id=560975307281268736&theme=dark" width="350" height="450" allowtransparency="true" frameborder="0"></iframe>
+            </div>
+            <div class="w3-col l6 m6 w3-padding-32">
+                <div class="boxed">
+                    <h1 class="w3-xxlarge w3-text-blue fontCenter"><b>TradeLabs Premium</b></h1>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="payment">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="hosted_button_id" value="ZPVFXBPFKGBXS">
+                        <table>
+                            <tr><td><input type="hidden" name="on0" value="Enter Discord Name" >Enter Discord Name:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+                        </table>
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
+                    <br>
+                    <h1 class="w3-xlarge w3-text-blue fontCenter "><b>Subscribe for access to:</b></h1>
+                    <p>LIVE Trade Setups</p>
+                    <p>LIVE Options Callouts</p>
+                    <p>Exclusive Chat for Premium Traders</p>
+                    <p>In-depth Trade Analysis</p>
+                    <p>Q&A Sessions with our Admins</p>
+                </div>
+            </div>
         </div>
-        <div class="w3-col l6 m6">
-            <h1 class="w3-xxlarge w3-text-blue fontCenter"><b>TradeLabs Premium</b></h1>
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="payment">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="ZPVFXBPFKGBXS">
-                <table>
-                    <tr><td><input type="hidden" name="on0" value="Enter Discord Name" >Enter Discord Name:</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
-                </table>
-                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-            <br>
-            <h1 class="w3-xlarge w3-text-blue fontCenter "><b>Subscribe for access to:</b></h1>
-            <p>LIVE Trade Setups</p>
-            <p>LIVE Options Callouts</p>
-            <p>Exclusive Chat for Premium Traders</p>
-            <p>In-depth Trade Analysis</p>
-            <p>Q&A Sessions with our Admins</p>
+    </div>
+
+    <!-- Biz Buzz -->
+    <div class="BizBuzz">
+        <div class="w3-col l8 m6 s12">
+            <iframe class="podcast" height="220px" width="100%" frameborder="no" scrolling="no" seamless src="https://player.simplecast.com/e560b5d2-7798-47cf-ade8-f171f8d7fb64?dark=true"></iframe>
+        </div>
+        <div class="w3-col l4 m6 s12 BizBuzztext w3-text-white">
+            <h2>The Biz Buzz Podcast</h2>
+            <h4>Presented by <span class="w3-text-blue">TradeLabs</span></h4>
+            <h3>Two young entrepreneurs give their perspective on what is trending in business and technology; with founder interviews, fresh news and investment discussion</h3>
+        </div>
+    </div>
+
+    <!-- The App Section -->
+    <div class="w3-padding-64 w3-dark-grey">
+        <div class="w3-row-padding fontCenter">
+            <div class="w3-col l6 m6 w3-padding-64">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Ojito1j6zD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="videoTxt">
+                    <p><span class="w3-xlarge w3-text-blue">TradeLabs Summer Paper Trading Competition</span><br>
+                        Start with <span class="w3-text-green">$100,000</span> in paper money and compete against other traders to see who can bring in the highest return during the month of July 2019
+                    </p>
+                    <h3 class="w3-text-green">Prizes for the top traders are:</h3>
+                    <p>1st: 6 Months TradeLabs Premium FREE & $50 cash</p>
+                    <p>2nd: 3 Months TradeLabs Premium FREE</p>
+                    <p>3rd: 1 Month TradeLabs Premium FREE</p>
+                    <a href="#" class="btn blue">Sign Up!</a>
+                </div>
+            </div>
+            <div class="w3-col l6 m6 fontCenter">
+                <!-- TradingView Widget BEGIN -->
+                <div class="tradingview-widget-container" style="display: inline-block; padding-top: 80px;">
+                    <div class="tradingview-widget-container__widget"></div>
+                    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Quotes</span></a> by TradingView</div>
+                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                        {
+                            "symbol": "NASDAQ:AAPL",
+                            "width": "450",
+                            "height": "300",
+                            "locale": "en",
+                            "dateRange": "12m",
+                            "colorTheme": "dark",
+                            "trendLineColor": "rgba(55, 166, 239, 0.77)",
+                            "underLineColor": "rgba(0, 0, 255, 0.15)",
+                            "isTransparent": false,
+                            "autosize": true,
+                            "largeChartUrl": ""
+                        }
+                    </script>
+                </div>
+                <!-- TradingView Widget END -->
+                <div class="chartTxt">
+                    <p class="colText"><span class="w3-xlarge w3-text-blue">Have you checked the markets yet today?</span><br> Go take a look...Your favorite TradingView charts are already included in our site!</p>
+                    <a href="chart.html" class="btn blue">Take Me There!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Nav Links -->
+    <div class="footerNav">
+        <div class="w3-row-padding w3-center w3-small w3-text-white">
+            <a href="index.html" class="navLink">Home</a>
+            <a href="chart.html" class="navLink">Chart</a>
+            <a href="learn.html" class="navLink">Learn</a>
+            <a href="tradelink.html" class="navLink">TradeLink</a>
         </div>
     </div>
 </div>
 
-<!-- The App Section -->
-<div class="w3-padding-64 w3-dark-grey">
-    <div class="w3-row-padding fontCenter">
-        <div class="w3-col l6 m6">
-            <h1 class="w3-xxlarge w3-text-blue fontCenter"><b>Free Trading Journal</b></h1>
-            <img src="SpreadsheetTemplate.PNG" class="colImgL">
-            <p class="colText"><span class="w3-xlarge w3-text-green">Trading Journal Template</span> - We have created a Google Spreadsheet template that provides new traders with the tools to track their trades and perfect their trading strategies.</p>
-        </div>
-        <div class="w3-col l6 m6 fontCenter">
-
-            <!-- TradingView Widget BEGIN -->
-            <div class="tradingview-widget-container" style="display: inline-block;">
-                <div class="tradingview-widget-container__widget"></div>
-                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Quotes</span></a> by TradingView</div>
-                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
-                    {
-                        "symbol": "NASDAQ:AAPL",
-                        "width": "450",
-                        "height": "300",
-                        "locale": "en",
-                        "dateRange": "12m",
-                        "colorTheme": "dark",
-                        "trendLineColor": "rgba(55, 166, 239, 0.77)",
-                        "underLineColor": "rgba(0, 0, 255, 0.15)",
-                        "isTransparent": false,
-                        "autosize": true,
-                        "largeChartUrl": ""
-                    }
-                </script>
-            </div>
-            <!-- TradingView Widget END -->
-
-            <p class="colText"><span class="w3-xlarge w3-text-green">TradeLabs Annual Collegiate Trading Competition</span> - Compete against other college traders to show off your investment knowledge and skills for a chance to win
-                prize money for your trading portfolio and your investment club!</p>
-        </div>
-    </div>
-</div>
 
 
-
-
-
-<!-- Footer -->
+<!-- Social Media -->
 <footer class="w3-container w3-theme-d3 footer">
     <div class="footerContainer">
         <div id="social-platforms">
@@ -188,8 +215,8 @@
 </footer>
 
 
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 <script>

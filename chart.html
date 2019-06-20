@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>TradeLabs</title>
+
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the html.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="chart.css" type="text/css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-medium w3-theme-d4"><i class="fas fa-flask w3-text-blue navIcon"></i>TradeLabs</a>
+        <a href="chart.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-chart-line w3-text-light-blue navIcon"></i>Chart</a>
+        <a href="learn.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fa fa-book w3-text-red navIcon"></i>Learn</a>
+        <a href="tradelink.html" class="w3-bar-item w3-button w3-padding-medium w3-hover-white"><i class="fas fa-comments-dollar w3-text-green navIcon"></i>TradeLink</a>
+
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button w3-padding-medium" title="Notifications"><i class="fa fa-bell w3-text-amber"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                <a href="https://discord.gg/krXySTH" class="w3-bar-item w3-button notifications">Join our group!</a>
+                <a href="" class="w3-bar-item w3-button notifications">Invite your friends</a>
+                <a href="https://www.twitter.com/thetradelabs" class="w3-bar-item w3-button notifications">Follow us on Social Media!</a>
+            </div>
+        </div>
+        <a href="https://discord.gg/krXySTH"><button type="button" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-medium w3-hover-white" title="Sign Up"><i class="fas fa-user-tie"></i>Sign Up</button></a>
+    </div>
+    <!-- END Navbar -->
+</div>
+
+
+    <!-- TradingView Chart Widget BEGIN -->
+
+<div class="w3-hide-small" style="height: 690px; padding: 20px;">
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+            {
+                "autosize":true,
+                "symbol": "NASDAQ:AAPL",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "calendar": true,
+                "details": true,
+                "studies": [
+                    "MASimple@tv-basicstudies"
+                ],
+            }
+        );
+    </script>
+</div>
+    <!-- TradingView Chart END -->
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d3 footer">
+    <div class="footerContainer">
+        <div id="social-platforms">
+            <a class="btn btn-icon btn-facebook" href="https://www.facebook.com/TradeLabs-221215365429193" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+
+            <a class="btn btn-icon btn-twitter" href="https://www.twitter.com/thetradelabs" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+
+            <a class="btn btn-icon btn-instagram" href="https://www.instagram.com/thetradelabs" target="_blank"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+
+            <a class="btn btn-icon btn-linkedin" href="https://www.linkedin.com/company/thetradelabs" target="_blank"><i class="fa fa-linkedin"></i><span>LinkedIn</span></a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -8,9 +8,6 @@ body {
 .navIcon {
     font-size: 20px;
 }
-#headerButton {
-    font-size: 1.5em;
-}
 
 /* Page Container */
 .page-content {
@@ -19,60 +16,79 @@ body {
     padding: 0;
 }
 
-.emailInvite {
-    margin-top: 10px;
+.BizBuzz {
+    padding: 50px 50px 25px 50px;
 }
 
-h3 {
-    font-size:1.5em;
-    font-weight:100;
-    letter-spacing:1em;
-    text-shadow:0px 0px 20px #6EC3EC;
-    color: #6EC3EC;
+.blog {
+    background-color: #272727;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 0; border-top: 2px solid #0F0F0F;
 }
-
-
-.container {
-    font-size:16px;
-    top: 50%;
-    left: 20%;
-    right: 20%;
-    position: absolute;
-    color: #FFFFFF;
+.posthr {
+    border: 0; border-top: 3px solid #0F0F0F;
+    width: 100%;
+}
+.titlehr {
+    border: 0; border-top: 3px solid #0F0F0F;
+    width: 90%;
+}
+.post {
+    padding: 50px 20px;
+}
+.titleLink {
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.imgCol {
+    display: block;
+    padding: 50px 0 0 0;
     text-align: center;
 }
-
-.bar {
-    height:.3em;
-    border-radius:10px;
-    background:transparent;
-    box-shadow:inset 0px 0px 8px rgba(50,50,50,1);
-    overflow:hidden;
-    padding:5px;
+.blogImg {
+    max-width: 450px;
+    width: 90%;
 
 }
+#readMoreHere {
+    text-align: right;
+    font-size: 1.7em;
+    text-decoration: underline;
 
-.progress {
-    height:inherit;
-    border-radius:inherit;
-    width:0;
-    background: #6EC3EC;
-    animation:load 3s linear infinite;
-    animation-delay:2s;
+}
+/* start da css for da buttons */
+.btn {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
 }
 
+.btn:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+.black {
+    background-color: black;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+.black:hover {
+    background-color: #333030;
+}
 
-@keyframes load{
-    0%{
-        width:0%;
-    }
-    50%{
-        width:100%;
-    }
-    100% {
-        width:0%;
-        float:right;
-    }
+.blue {
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+    background-color: #6FC6FF;
 }
 
 /* FOOTER */
